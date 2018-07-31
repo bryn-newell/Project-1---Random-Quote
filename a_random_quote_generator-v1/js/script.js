@@ -32,12 +32,9 @@ stringOfQuoteProperties += "<p class='source'>" + randomQuote.source;
 if (randomQuote.citation) {
   stringOfQuoteProperties += "<span class='citation'>" + randomQuote.citation + "</span>";
 }
-else { stringOfQuoteProperties += " "}
-
 if (randomQuote.year) {
   stringOfQuoteProperties += "<span class='year'>" + randomQuote.year + "</span>"
 }
-else { stringOfQuoteProperties += " "}
 
 /* Adding the final html paragraph syntax - as it's not included in the earlier parts of the string, so that if a quote
 does or does not have a citation or year, it will still be formatted in the same div.
