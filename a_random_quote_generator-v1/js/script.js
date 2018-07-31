@@ -24,7 +24,7 @@ console.log(getRandomQuote(quotes));
 function printQuote () {
 var randomQuote = getRandomQuote(quotes);
 var stringOfQuoteProperties;
-stringOfQuoteProperties += "<p class='quote'>" + randomQuote.quote + "</p>";
+stringOfQuoteProperties = "<p class='quote'>" + randomQuote.quote + "</p>";
 stringOfQuoteProperties += "<p class='source'>" + randomQuote.source;
 
 //Determining if the object contains a citation or year and adding that html if it does
