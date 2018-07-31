@@ -18,6 +18,7 @@ function getRandomQuote (array) {
 var randomQuote = array[Math.floor(Math.random() * quotes.length)];
 return randomQuote;
 }
+// Checking to make sure the random quote function works properly
 console.log(getRandomQuote(quotes));
 
 // Create the printQuote funtion and name it printQuote
@@ -27,6 +28,7 @@ var stringOfQuoteProperties;
 stringOfQuoteProperties += "<p class='quote'>" + randomQuote.quote + "</p>";
 stringOfQuoteProperties += "<p class='source'>" + randomQuote.source;
 
+//Determining if the object contains a citation or year and adding that html if it does
 if (randomQuote.citation) {
   stringOfQuoteProperties += "<span class='citation'>" + randomQuote.citation + "</span>";
 }
@@ -37,6 +39,9 @@ if (randomQuote.year) {
 }
 else { stringOfQuoteProperties += " "}
 
+/* Adding the final html paragraph syntax - as it's not included in the earlier parts of the string, so that if a quote
+does or does not have a citation or year, it will still be formatted in the same div.
+*/
 stringOfQuoteProperties += "</p>"
 
 document.getElementById('quote-box').innerHTML = stringOfQuoteProperties;
