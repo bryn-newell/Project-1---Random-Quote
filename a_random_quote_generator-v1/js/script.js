@@ -17,6 +17,7 @@ function getRandomQuote (array) {
 var randomQuote = array[Math.floor(Math.random() * quotes.length)];
 return randomQuote;
 }
+
 // Checking to make sure the random quote function works properly
 console.log(getRandomQuote(quotes));
 
@@ -56,6 +57,9 @@ document.body.style.background = randomColor;
 }
 
 getRandomColor();
+
+//Automatically changes the quote every 20 seconds
+setInterval(printQuote, 20000);
 
 
 // This event listener will respond to "Show another quote" button clicks
