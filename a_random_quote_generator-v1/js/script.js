@@ -41,6 +41,7 @@ does or does not have a citation or year, it will still be formatted in the same
 stringOfQuoteProperties += "</p>"
 
 document.getElementById('quote-box').innerHTML = stringOfQuoteProperties;
+document.getElementById('quote-box').style.background = getRandomColor();
 }
 
 // Function to get a random background color
@@ -49,9 +50,12 @@ var red = Math.floor(Math.random() * 256);
 var green = Math.floor(Math.random() * 256);
 var blue = Math.floor(Math.random() * 256);
 var randomColor = "rgb(" + red + "," + green + "," + blue + ")"
-return randomColor
+console.log(randomColor);
+
+document.body.style.background = randomColor;
 }
 
+getRandomColor();
 
 
 // This event listener will respond to "Show another quote" button clicks
