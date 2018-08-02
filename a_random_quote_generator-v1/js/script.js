@@ -9,7 +9,9 @@ citation: "The Emperor's New Groove", year: 2000, tag: "Movie quote"},
 { quote: "Help me I'm poor!", source: "Kristen Wiig",
 citation: "Bridesmaids", year: 2011, tag: "Movie quote"},
 { quote: "It's an avocado!!! Thaaaankkkss!", source: "Vine", tag: "Internet culture" },
-{ quote: "Road work ahead?! Well yeah I sure hope it does!", source: "Vine", tag: "Internet culture" }
+{ quote: "Road work ahead?! Well yeah I sure hope it does!", source: "Vine", tag: "Internet culture" },
+{ quote:"Butter is my favorite food!", source:"Andy Dwyer",
+citation: "Parks and Recreation, Season 5 Episode 19", year: 2012, tag: "Television quote" }
 ]
 
 // Create the getRandomQuote function and name it getRandomQuote
