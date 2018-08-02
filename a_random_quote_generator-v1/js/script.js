@@ -44,6 +44,7 @@ does or does not have a citation or year, it will still be formatted in the same
 stringOfQuoteProperties += "</p>"
 
 document.getElementById('quote-box').innerHTML = stringOfQuoteProperties;
+//Attributing the random color function inside the print quote function
 document.getElementById('quote-box').style.background = getRandomColor();
 }
 
