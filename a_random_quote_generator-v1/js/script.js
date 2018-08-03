@@ -1,7 +1,7 @@
 // FSJS - Random Quote Generator
 
 // Create the array of quote objects and name it quotes
-var quotes = [
+const quotes = [
 { quote: "And in the morning, I'm making waffles!", source: "Donkey",
 citation: "Shrek", year: 2001, tag: "Movie quote"},
 { quote: "Yayyy! I'm a llama again!! Oh wait...", source: "Kuzco",
@@ -15,8 +15,8 @@ citation: "Parks and Recreation, Season 5 Episode 19", year: 2012, tag: "Televis
 ]
 
 // Create the getRandomQuote function and name it getRandomQuote
-function getRandomQuote (array) {
-var randomQuote = array[Math.floor(Math.random() * quotes.length)];
+const getRandomQuote = (array) => {
+let randomQuote = array[Math.floor(Math.random() * quotes.length)];
 return randomQuote;
 }
 
@@ -24,9 +24,9 @@ return randomQuote;
 console.log(getRandomQuote(quotes));
 
 // Create the printQuote funtion and name it printQuote
-function printQuote () {
-var randomQuote = getRandomQuote(quotes);
-var stringOfQuoteProperties;
+const printQuote = () => {
+let randomQuote = getRandomQuote(quotes);
+let stringOfQuoteProperties;
 stringOfQuoteProperties = "<p class='quote'>" + randomQuote.quote + "</p>";
 stringOfQuoteProperties += "<p class='source'>" + randomQuote.source;
 
@@ -49,11 +49,11 @@ document.getElementById('quote-box').style.background = getRandomColor();
 }
 
 // Function to get a random background color
-function getRandomColor () {
-var red = Math.floor(Math.random() * 256);
-var green = Math.floor(Math.random() * 256);
-var blue = Math.floor(Math.random() * 256);
-var randomColor = "rgb(" + red + "," + green + "," + blue + ")"
+const getRandomColor = () => {
+const red = Math.floor(Math.random() * 256);
+const green = Math.floor(Math.random() * 256);
+const blue = Math.floor(Math.random() * 256);
+const randomColor = "rgb(" + red + "," + green + "," + blue + ")"
 console.log(randomColor);
 
 document.body.style.background = randomColor;
